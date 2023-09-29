@@ -1,0 +1,75 @@
+{
+    "articles": [
+      {
+        "nom": "Costume en laine",
+        "prix": 199.99,
+        "designation": "Costume élégant en laine pour hommes",
+        "categorie": "costume",
+        "image": "costume_en_laine.png"
+      },
+      {
+        "nom": "Robe de soirée",
+        "prix": 149.99,
+        "designation": "Robe de soirée longue pour femmes",
+        "categorie": "robe",
+        "image": "robe_de_soiree.png"
+      },
+      {
+        "nom": "Chemise en coton",
+        "prix": 49.99,
+        "designation": "Chemise décontractée en coton pour hommes",
+        "categorie": "chemise",
+        "image": "chemise_en_coton.png"
+      },
+      {
+        "nom": "Jupe plissée",
+        "prix": 79.99,
+        "designation": "Jupe plissée midi pour femmes",
+        "categorie": "jupe",
+        "image": "jupe_plissee.png"
+      },
+      {
+        "nom": "Veste en tweed",
+        "prix": 129.99,
+        "designation": "Veste en tweed pour hommes",
+        "categorie": "manteau",
+        "image": "veste_en_tweed.png"
+      },
+      {
+        "nom": "Pantalon de costume",
+        "prix": 79.99,
+        "designation": "Pantalon de costume ajusté pour hommes",
+        "categorie": "pantalon",
+        "image": "pantalon_de_costume.png"
+      },
+      {
+        "nom": "Blouse en soie",
+        "prix": 89.99,
+        "designation": "Blouse en soie légère pour femmes",
+        "categorie": "blouse",
+        "image": "blouse_en_soie.png"
+      },
+      {
+        "nom": "Manteau en laine",
+        "prix": 179.99,
+        "designation": "Manteau en laine pour femmes",
+        "categorie": "manteau",
+        "image": "manteau_en_laine.png"
+      },
+      {
+        "nom": "Cravate en soie",
+        "prix": 29.99,
+        "designation": "Cravate en soie haut de gamme",
+        "categorie": "cravate",
+        "image": "cravate_en_soie.png"
+      },
+      {
+        "nom": "Chaussures en cuir",
+        "prix": 119.99,
+        "designation": "Chaussures en cuir pour hommes",
+        "categorie": "chaussure",
+        "image": "chaussure_en_cuir.png"
+      }
+    ]
+  }
+  

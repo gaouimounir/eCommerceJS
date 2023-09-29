@@ -1,0 +1,534 @@
+@import url(https://fonts.googleapis.com/css?family=Italianno);
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Maitree:wght@300&family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    background-image: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    width: 100%;
+}
+
+/*--------------SECTION NAV----------*/
+aside {
+    padding-left: 1rem;
+    padding-right: 0;
+    padding-bottom: 0;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.header a {
+    color: #ffffff;
+}
+
+nav {
+    padding-left: 2rem;
+    padding-bottom: 8rem;
+}
+
+.logo {
+    font-family: italianno;
+    font-size: 4rem;
+    font-weight: 100;
+    height: 50px;
+}
+
+.slogan {
+    font-family: 'Amiri';
+    font-style: italic;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    padding-left: .5rem;
+    padding-top: 1rem;
+}
+
+li i {
+    padding-top: .3rem;
+}
+
+.bouton_categorie {
+    background-color: transparent;
+    border: 0;
+    font-family: 'Amiri';
+    font-style: italic;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    gap: 1rem;
+    padding: .2rem;
+    width: 100%;
+}
+
+.bouton_categorie.active {
+    background-color: #FCFAF9;
+    color: #303030;
+    font-weight: 700;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    position: relative;
+}
+
+.bouton_categorie.active::before {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    bottom: 100%;
+    right: 0;
+    background-color: transparent;
+    border-bottom-right-radius: .5rem;
+    box-shadow: 0 1rem 0 #FCFAF9;
+}
+
+.bouton_categorie.active::after {
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 2rem;
+    top: 100%;
+    right: 0;
+    background-color: transparent;
+    border-top-right-radius: .5rem;
+    box-shadow: 0 -1rem 0 #FCFAF9;
+
+}
+
+.cont_panier {
+    padding-top: 4rem;
+}
+
+.cont_panier i {
+    padding-left: 1rem;
+}
+
+.bouton_panier {
+    display: flex;
+    gap: .5rem;
+    color: #ffffff;
+    font-family: 'Amiri';
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.compteur {
+    background-color: rgb(203, 4, 4);
+    color: #ffffff;
+    width: 1.5rem;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.footer_nav {
+    font-family: 'Amiri';
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #bac4e2;
+    /*padding-left: 20%;*/
+    text-align: center;
+}
+
+/*-----------SECTION MAIN---------*/
+
+main {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    margin: 1rem;
+    border-radius: 2rem;
+    margin-left: 0;
+    padding: 1rem;
+}
+
+.titre_principal, .search {
+    color: #303030;
+    font-family: 'Italianno';
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
+    max-width:50%;
+}
+
+.search{
+    float:right;
+    margin-right: 5rem;
+}
+.search input{
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+    font-family: 'Maitree';
+    color: #303030;
+    font-weight: 600;
+}
+.search button {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight:800;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #25419a;
+}
+.search button:hover{
+    background-color: #425fc0;
+}
+
+/*---------SECTION CARD--------*/
+.valise_items {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    column-gap: 1rem;
+    justify-items: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+.card-body {
+    width: 16rem;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.img_item {
+    border-radius: 1rem;
+    max-width: 100%;
+    height: auto;
+    height:65%;
+    
+}
+
+.valise_contenu_card {
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    border-radius: 1rem;
+    margin-top: -1.5rem;
+    position: relative;
+    
+}
+
+.contenu_card {
+    margin: 0.5rem;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    justify-content: space-between;
+}
+
+.contenu_card h5,
+.prix {
+    font-family: 'Amiri';
+    font-style: italic;
+    font-size: 1.2rem;
+}
+
+.descr_article {
+    font-family: 'Maitree';
+    font-size: .9rem;
+    height: 2rem;
+}
+
+.prix {
+    align-self: end;
+    padding-right: 1rem;
+}
+
+.categorie {
+    display: none;
+}
+
+.contenu_card button {
+    background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: 600;
+    margin-right: 8rem;
+    border: 0;
+    height: 1.5rem;
+    border-radius: 1rem;
+    font-family: 'Amiri';
+    font-style: italic;
+}
+.img_item{
+    background-color: white;
+}
+.header_mobile,
+.close_menu_responsive {
+    display: none;
+}
+
+/***        MEDIA QUERIES      ***/
+
+@media (max-width: 952px) {
+
+    .wrapper {
+        grid-template-columns: 25% 75%;
+    }
+
+    /*---------SECTION NAV-------*/
+    .header {
+        padding-left: .5rem;
+        padding-top: .2rem;
+    }
+
+    .logo {
+        font-size: 3.1rem;
+        height: 40px;
+    }
+
+    .slogan {
+        font-size: .95rem;
+    }
+
+    nav,
+    aside {
+        padding-left: 0;
+        margin-left: 1rem;
+    }
+
+    nav {
+        padding-bottom: 25rem;
+        padding-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .bouton_categorie {
+        gap: 0.5rem;
+        font-size: 1rem;
+    }
+
+    .bouton_panier {
+        font-size: 1rem;
+        padding-left: 0;
+    }
+    /*---------SECTION MAIN-------*/
+
+    /*---------SECTION CARD-------*/
+    .valise_items {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+    .card-body {
+        width: 13rem;
+    }
+    .contenu_card {
+        height: 9rem;
+        padding: .8rem;
+    }
+
+    .contenu_card h5,
+    .prix {
+        font-size: 1rem;
+    }
+
+    .descr_article {
+        font-size: .7rem;
+    }
+
+    .contenu_card button {
+        margin-right: 5rem;
+        height: 1.5rem;
+    }
+    .search{
+        margin-right: 1rem;
+    }
+    .search input{
+        width: 10rem;
+    }
+
+}
+
+@media (max-width: 730px) {
+    .wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: 10% auto;
+        width: 100%;
+        padding-right: 1rem;
+        height: 100vh;
+
+    }
+ /*---------SECTION MAIN-------*/
+    main {
+        margin: .5rem;
+        width: 100%;
+        align-content: center;
+        padding-right: .5rem;
+        padding-left: .5rem;
+        overflow: scroll;
+    }
+
+    .titre_principal, .search {
+        padding-left: 1rem;
+        padding-top: 0;
+        padding-bottom: 1rem;
+    }
+
+        /*------------SECTION NAV------*/
+    aside {
+        position: fixed;
+        width: 65%;
+        z-index: 9;
+        background-image: linear-gradient(to bottom, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+        left: 0;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        transform: translate(-100%);
+        opacity: 0;
+        transition: 0.2s;
+        margin-left: 0;
+    }
+
+    .aside_visible {
+        transform: translate(0);
+        opacity: 1;
+    }
+
+    .bouton_categorie.active::after,
+    .bouton_categorie.active::before {
+        display: none;
+    }
+
+    .header_mobile {
+        display: flex;
+        padding-left: 1.5rem;
+        justify-content: space-between;
+        align-items: center;
+        color: #ffffff;
+        height: 70px;
+    }
+
+    .menu_responsive,
+    .close_menu_responsive {
+        background-color: transparent;
+        color: #ffffff;
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .close_menu_responsive {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+
+    }
+    .header{
+        padding-left: 1rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding-bottom: 8rem;
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .bouton_categorie{
+        font-size: 1.2rem;
+    }
+    .cont_panier{
+        padding-top: 3rem;
+ 
+    }
+    .footer_nav{
+        padding-top: 0;
+        margin-top: -2rem;
+        text-align: center;
+    }
+
+    /*---------SECTION CARD-------*/
+    .valise_items {
+        column-gap: .5rem;
+        padding-top: 1rem;
+        column-gap: 0;
+        width: 100%;
+        padding: 0;
+    }
+
+    .card-body {
+        width: 9rem;
+        height: auto;
+
+    }
+
+    .contenu_card {
+        height: 8rem;
+        margin: 0.3rem;
+        padding: .3rem;
+
+    }
+
+    .contenu_card h5,
+    .prix {
+        font-size: .8rem;
+    }
+
+    .descr_article {
+        font-size: .6rem;
+    }
+
+    .prix {
+        padding-right: .5rem;
+    }
+
+    .contenu_card button {
+        margin-right: 3rem;
+    }
+
+    .titre_principal{
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .search{
+        margin-right: 0;
+        width: 100%;
+        float: right;
+        align-self: self-end;
+    }
+    .search input{
+        width: 7rem;
+    }
+}
+
+@media (max-width: 500px) {
+    
+}

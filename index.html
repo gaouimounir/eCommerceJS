@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ducsman</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles2.css">
+  <script src="https://kit.fontawesome.com/aaa613d165.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header_mobile">
+      <div class="valise_logo_mobile">
+      <div class="logo">Ducsman</div>
+      <h2 class="slogan"> Sapés comme jamais.</h2>
+      </div>
+      <button id ="open_menu" class="menu_responsive"><i class="fa-solid fa-bars"></i></button>
+    </header>
+    <aside>
+      <button id ="close_menu" class="close_menu_responsive"><i class="fa-solid fa-x"></i></button>
+      <header class="header">
+        <a href="index.html" class="valise_logo">
+          <div class="logo">Ducsman</div>
+          <h2 class="slogan"> Sapés comme jamais. </h2>
+        </a>
+      </header>
+      <nav>
+        <ul class="menu" id="menu">
+          <li>
+            <button id="tous" onclick="displayAllArticle()" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Tous les articles</button>
+          </li>
+          <li>
+            <button id="costume" onclick="displayOneArticle('costume')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Costumes</button>
+          </li>
+          <li>
+            <button id="robe" onclick="displayOneArticle('robe')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Robes</button>
+          </li>
+          <li>
+            <button id="chemise" onclick="displayOneArticle('chemise')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Chemises</button>
+          </li>
+          <li>
+            <button id="jupe" onclick="displayOneArticle('jupe')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Jupes</button>
+          </li>
+          <li>
+            <button id="manteau" onclick="displayOneArticle('manteau')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Manteaux</button>
+          </li>
+          <li>
+            <button id="pantalon" onclick="displayOneArticle('pantalon')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Pantalons</button>
+          </li>
+          <li>
+            <button id="blouse" onclick="displayOneArticle('blouse')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Blouses</button>
+          </li>
+          <li>
+            <button id="cravate" onclick="displayOneArticle('cravate')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Cravates</button>
+          </li>
+          <li>
+            <button id="chaussure" onclick="displayOneArticle('chaussure')" class="bouton_categorie bouton_cat"><i class="fa-solid fa-caret-right"></i>Chaussures</button>
+          </li>
+          <li class="cont_panier">
+            <a class="bouton_categorie bouton_panier" onclick="chargerPanier()">
+              <i class="fa-solid fa-cart-shopping"></i>Panier
+              <span id="compteur" class="compteur">0</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <footer id="footer_nav" class="footer_nav">
+        <p class="texte_footer">© 2023 Ducsman </p>
+      </footer>
+    </aside>
+    <main id="main">
+    </main>
+  </div>
+  <script src="scripts.js"></script>
+</body>
+
+</html>

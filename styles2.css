@@ -1,0 +1,200 @@
+@import url(https://fonts.googleapis.com/css?family=Italianno);
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amiri&family=Maitree:wght@300&family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main h1 {
+    color: #303030;
+    font-family: 'Italianno';
+    font-size: 2rem;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+
+.articlePanier {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 96%;
+    color: #303030;
+    border-radius: 1rem;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    margin-bottom: 2rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.intitule {
+    font-family: 'Amiri';
+    font-style: italic;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 1rem;
+
+}
+
+.intitule p {
+    font-family: 'Maitree';
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+    height: 60px;
+    vertical-align: middle;
+
+}
+
+.imgArticle p {
+    justify-items: center;
+    text-align: center;
+    height: 60px;
+}
+
+.imageResize {
+    padding-top: 0;
+    height: 50px;
+    align-items: center;
+    justify-self: center;
+}
+
+.logoSup {
+    display: flex;
+    text-align: center;
+    color: red;
+}
+
+.logoSup i {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.viderPanier {
+    width: 8rem;
+    font-family: 'Amiri';
+    font-style: italic;
+    color: #303030;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 1rem 1rem;
+    cursor: pointer;
+    margin-left: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid    #5c5b5b;
+}
+.viderPanier:hover{
+    background-image: none;
+    background-color: #5c5b5b;
+    color: #fdfbfb;
+}
+
+.validationPanier {
+    display: flex;
+    flex-direction: row;
+    width: 18rem;
+    height: 2rem;
+    padding-left: 2%;
+    font-family: 'Amiri';
+    font-style: italic;
+    justify-content: space-between;
+    color: #303030;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    border-radius: 1rem 1rem;
+    float: right;
+    margin-right: 2rem;
+    
+}
+.prixPanier{
+    display: none;
+}
+.totalPanier{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    width: 50%;
+    vertical-align: middle;
+    font-weight: 700;
+}
+.texte_total{
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+#total{
+    text-align: center;
+    padding-left: 1rem;
+    padding-top: .2rem;
+}
+.euro{
+    padding-right: 1rem;
+    padding-top: .2rem;
+}
+.payerPanier {
+    padding-right: 3%;
+    padding-left: 3%;
+    border-radius: 1rem 1rem;
+    background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    cursor: pointer;
+    font-weight: 600;
+}
+.payerPanier:hover{
+    background-color:#9ebaa1;
+    background-image: none;
+    color: #fdfbfb;
+}
+.payerBtn{
+    padding-top: .2rem;
+}
+
+/***        MEDIA QUERIES      ***/
+@media (max-width: 952px){
+   
+}
+@media (max-width: 730px){
+
+main h1{
+    padding-left: 1rem;
+    padding-top: 0;
+}
+.articlePanier{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 1rem;
+    padding-right: .8rem;
+}
+.intitule{
+    font-size: .8rem;
+}
+.intitule p{
+    font-size: .7rem;
+}
+.viderPanier{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+.validationPanier{
+    margin-right: 1rem;
+    width: 17rem;
+}
+.texte_total{
+    font-size: 1rem;
+    padding-top: .1rem;
+}
+#total, .euro{
+    font-size: .9rem;
+    padding-top: .2rem;
+}
+.euro{
+    padding-left: 0;
+    padding-right: .8rem;
+}
+#total{
+    padding-left: 1.5rem;
+}
+
+}
